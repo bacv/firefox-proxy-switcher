@@ -1,0 +1,34 @@
+{
+
+  "manifest_version": 2,
+  "name": "Proxy Toggle",
+  "description": "Sets and toggles a proxy.",
+  "version": "1.0",
+
+  "icons": {
+    "46": "icons/block-green.svg",
+    "48": "icons/block.svg"
+  },
+
+  "applications": {
+    "gecko": {
+      "strict_min_version": "56.0a1"
+    }
+  },
+
+  "background": {
+    "scripts": [
+      "background/toolbar.js"
+    ]
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/page-16.png",
+      "32": "icons/page-32.png"
+    }
+  },
+
+  "permissions": ["proxy", "storage"]
+
+}
